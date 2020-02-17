@@ -25,7 +25,7 @@ void loop() {
   DisplayControl();
 
   //Take care of button events
-  //ButtonEvents();
+  ButtonEvents();
 
   //Take care of the process
   ReflowProcess();
