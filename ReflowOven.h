@@ -5,6 +5,7 @@
 #define TRIAC_OUT A2
 #define SINE_IN   2
 #define BUZZER    3
+#define FAN_OUT   5
 #define SENSOR_CS 6
 #define PB_START  7
 #define PB_SELECT 8
