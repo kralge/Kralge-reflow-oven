@@ -193,6 +193,11 @@ void DisplayControl() {
       tone( BUZZER, 2400, ShortBeepTime );
     }
     if(( 2 == DispStat ) || ( 8 == DispStat )) TFTprocStat( DispStat );
+    if( 1 < ProcStat ) {                      // switch on circulating fan (D5) when process is active
+      PORTD = PORTD | 0b100000;
+    } else {
+      PORTD = PORTD & 0b11011111;
+    }
   }
 }
 
