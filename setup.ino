@@ -17,6 +17,7 @@ void setup() {
 
   //setup and initialize I/O and interrupts
   pinMode( TRIAC_OUT, OUTPUT );
+  pinMode( FAN_OUT, OUTPUT );
   pinMode( SENSOR_CS, OUTPUT );
   PORTD = PORTD | 0b1000000;            //SENSOR_CS (PORTD6) output ON
 
